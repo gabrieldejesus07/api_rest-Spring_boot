@@ -15,5 +15,8 @@ public record DadosCadastroFuncionario(
         String telefone
 ) {
 
+        public DadosCadastroFuncionario(Funcionario funcionario){
+                this(funcionario.getNome(), funcionario.getCpf(), funcionario.getTelefone());
+        }
 
 }
